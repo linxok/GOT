@@ -40,7 +40,7 @@ form {
 	justify-content: space-between;
   	display: flex;
   	height: auto;
-  	 padding: 10%;
+  	 padding: 0% 15% 0% 15%;
   	flex-direction: column;
   
 }
@@ -59,6 +59,7 @@ form {
 .input {
 	display: grid;
 	padding-bottom: 5%;
+	 
 
 }
 .input p{
@@ -80,10 +81,29 @@ form {
 .input_label{
 	font-size: 1em;
 	color: #d3bb89;
+	background-image: url(image/darknoise.png);
+
+}
+ 
+select{
+	padding-top: 5%;
+	border: none;
+  	background-color: inherit;
+  	color: #fef8eb;
+}
+
+textarea{
+	padding-top: 5%;
+	border: none;
+  	background-color: inherit;
+  	color: #fef8eb;
 
 }
 
+ 
+
 .button{
+	margin-top: 5%;
 	height: 40px;
 	background-color: #c19a49;
 	color: #fef8eb;

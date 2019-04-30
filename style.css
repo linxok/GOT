@@ -1,0 +1,56 @@
+
+
+html {
+	border: 1px dashed black;
+	background-image: url(image/darknoise.png);
+
+}
+
+body{
+	display: flex;
+}
+
+.left-area {
+	margin: -8px 0px -8px -8px;
+  	width: 50%;
+  	height: 100vh;
+	background-size: cover;
+  	background-position: center;
+	background-image: url(image/maxresdefault.jpg);
+}
+
+.right-area {
+	 display: grid;
+	 margin: 10px 0 10px 0;
+	 align-items: center;
+	 width: 50%;
+	 height: 100vh;
+
+}
+
+.header{
+	text-align: center;
+	font-family: Game of Thrones;
+	font-size: 1.5em;
+	color: #d3bb89;
+	padding-bottom: 10%;
+}
+form {
+	padding: 18%;
+}
+
+.report{
+	display: grid;
+	width: 100vh;
+	font-size: 0.8em;
+	color: white; 
+	border-left: 2px solid;
+	border-color:  #d3bb89;
+	padding-left: 10px;
+	margin-bottom: 10%;
+}
+
+@font-face {
+font-family:Game of Thrones;
+src: url("fonts/Game of Thrones.ttf");
+}

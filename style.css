@@ -1,13 +1,14 @@
 
 
 html {
-	border: 1px dashed black;
+	border: 1px dashed;
 	background-image: url(image/darknoise.png);
 
 }
 
 body{
 	display: flex;
+	margin: 0px;
 }
 
 .left-area {
@@ -20,12 +21,12 @@ body{
 }
 
 .right-area {
-	 display: grid;
-	 margin: 10px 0 10px 0;
-	 align-items: center;
-	 width: 50%;
-	 height: 100vh;
-
+	display: grid;
+  	margin: -10px 0px -10px 0px;
+  	align-items: center;
+  	width: 50%;
+  	height: 100vh;
+	 
 }
 
 .header{
@@ -36,18 +37,56 @@ body{
 	padding-bottom: 10%;
 }
 form {
-	padding: 18%;
+	justify-content: space-between;
+  	display: flex;
+  	height: auto;
+  	 padding: 10%;
+  	flex-direction: column;
+  
 }
 
 .report{
 	display: grid;
-	width: 100vh;
+	 
 	font-size: 0.8em;
 	color: white; 
 	border-left: 2px solid;
 	border-color:  #d3bb89;
 	padding-left: 10px;
 	margin-bottom: 10%;
+}
+
+.input {
+	display: grid;
+	padding-bottom: 5%;
+
+}
+.input p{
+	font-size: 0.6em;
+	color: white; 
+	margin: 0;
+
+}
+.input input{
+	background-color: inherit;
+	border: none;
+	padding-top: 5%;
+}
+.input hr{
+	width: 100%;
+	border-color: #d3bb89;
+}
+
+.input_label{
+	font-size: 1em;
+	color: #d3bb89;
+
+}
+
+.button{
+	height: 40px;
+	background-color: #c19a49;
+	color: #fef8eb;
 }
 
 @font-face {

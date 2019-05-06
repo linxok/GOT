@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Game of Trones</title>
 	<link rel="stylesheet"  href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<section class="left-area">
+	<section class="panel-left">
 		
 	</section>
-	<section class="right-area">
-		<form action="#" method="post" accept-charset="utf-8">
-			<div class="header">Game of Trones			
+	<section class="panel-right">
+		<form class="user-form"
+			  action="#"
+			  method="post"
+			  accept-charset="utf-8">
+			<div class="user-form__header">Game of Trones
 			</div>
-			<div class="report">You've successfully joined the game.<br>
-          		Tell us more about yourself.
+			<div class="user-form_report">
+				<p> You've successfully joined the game. </p>
+          		<p> Tell us more about yourself. </p>
 			</div>
-			<div class="input">
+			<div class="user-fo rm__input">
 				<label class="input_label" for="username">Who are you?</label>
 				<p>Alpha-numeric username</p>
 				<input type="text" name="" id="username" value="" placeholder="arya">
 				<hr>
 			</div>
-			<div class="input"> 
-				<label class="input_label" for="select">You Great House</label>
-				<select name="input_select" id="select" >
-					<option value="house">Select House</option>
-					
+			<div class="user-form__input">
+				<label class="input_label" for="select_house">You Great House</label>
+				<select name="input_select" id="select_house" >
+					<option hidden selected disabled=""> Select House</option>
+					<option value="Stark">Stark of Winterfell</option>
+					<option value="Lannister">Lannister of Casterly Rock</option>
+					<option value="Targaryen">Targaryen of King's Landing</option>
+					<option value="Baratheon">Baratheon of Storm's End</option>
+					<option value="Arryn">Arryn of the Eyrie</option>
+					<option value="Greyjoy">Greyjoy of Pyke</option>
+					<option value="Tully">Tully of Riverrun</option>
+					<option value="Tyrell">Tyrell of Highgarden</option>
 				</select>
 				<hr>
 			</div>
-			<div class="input">
-				<label class="input_label" for="teaxtarr">You preferences, hobbies, wishes, etc.</label>
+			<div class="user-form__input">
+				<label class="input_label" for="textarea">You preferences, hobbies, wishes, etc.</label>
 				<textarea class="input_textarea" name="" id="textarea" placeholder="I have a long TOKILL list..."></textarea>
 				 <hr>				
 			</div>

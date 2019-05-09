@@ -1,128 +1,138 @@
 
-
 html {
-	background-color: #202020;
-	border: 1px dashed;
-	background-image: url(image/darknoise.png);
+    background-color: #202020;
+    border: 1px dashed;
+    background-image: url(image/darknoise.png);
 }
+
 * {
-	margin: 0 0 0 0;
+    margin: 0 0 0 0;
 
 }
 
-body{
-	display: flex;
-	margin: 0px;
+body {
+    display: flex;
 }
 
 .panel-left {
-	margin: -8px 0px -8px -8px;
-  	width: 50%;
-  	height: 100vh;
-	background-size: cover;
-  	background-position: center;
-	background-image: url(image/maxresdefault.jpg);
+    margin: -8px 0px -8px -8px;
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(image/maxresdefault.jpg);
 }
 
 .panel-right {
-	display: grid;
-  	margin: -10px 0px -10px 0px;
-  	align-items: center;
-  	width: 50%;
-  	height: 100vh;
+    display: grid;
+    margin: -10px 0px -10px 0px;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
 
 }
 
-
-
-.user-form__header{
-	text-align: center;
-	font-family: "Game of Thrones", serif ;
-	font-size: 1.5em;
-	color: #d3bb89;
-	padding-bottom: 10%;
+.user-form__header {
+    text-align: center;
+    font-family: "Game of Thrones", serif;
+    font-size: 1.5em;
+    color: #d3bb89;
+    padding-bottom: 10%;
 }
+
 .user-form {
-	justify-content: space-between;
-  	display: flex;
-  	height: auto;
-  	padding: 0% 15% 0% 15%;
-  	flex-direction: column;
-  
+    justify-content: space-between;
+    display: flex;
+    height: auto;
+    padding: 0% 15% 0% 15%;
+    flex-direction: column;
+
 }
 
-.user-form_report{
-	display: grid;
-	font-family: sans-serif;
-	font-size: 0.8em;
-	color: white; 
-	border-left: 2px solid;
-	border-color:  #d3bb89;
-	padding-left: 10px;
-	margin-bottom: 10%;
+.user-form__report {
+    display: grid;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: white;
+    border-left: 2px solid;
+    border-bottom: 1px solid;
+    border-color: #d3bb89;
+    padding-left: 10px;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .user-form__input {
-	display: grid;
-	padding-bottom: 5%;
-	 
-
-}
-.user-form__input p{
-	font-size: 0.6em;
-	color: white; 
-	margin: 0;
-
-}
-.user-form__input input{
-	background-color: inherit;
-	border: none;
-	padding-top: 5%;
-	outline: none;
-	color: #fef8eb;
-}
-.user-form__input hr{
-	width: 100%;
-	border-color: #d3bb89;
-}
-
-.input_label{
-	font-family: serif;
-	font-size: 1em;
-	color: #d3bb89;
+    font-family: 'EB Garamond', serif;
+    display: grid;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-bottom: 2px solid;
+    border-color: #d3bb89;
 
 
 }
 
-#select_house{
-	padding-top: 5%;
-	border: none;
-	background-color: #202020;
-	background-image: url(image/darknoise.png);
-  	color: #fef8eb;
-	outline: none;
+.user-form__input p {
+    font-size: 0.6em;
+    color: white;
+    margin: 0;
+
 }
 
-.input_textarea{
-	padding-top: 5%;
-	border: inherit;
-  	background-color: inherit;
-  	color: #fef8eb;
-	resize: none;
-	outline: none;
+.user-form__input input {
+    background-color: inherit;
+    border: none;
+    padding-top: 5%;
+    outline: none;
+    color: #fef8eb;
+}
+
+.input-label {
+    font-family: 'EB Garamond', serif;
+    font-size: 1em;
+    color: #d3bb89;
+
+
+}
+
+#select_house {
+    padding-top: 5%;
+    border: none;
+    background-color: #202020;
+    background-image: url(image/darknoise.png);
+    color: #fef8eb;
+    outline: none;
+}
+
+.input_textarea {
+    padding-top: 5%;
+    border: none;
+    background-color: inherit;
+    color: #fef8eb;
+    resize: none;
+    outline: none;
 }
 
 
+.button {
+    margin-top: 5%;
+    height: 40px;
+    background-color: #c19a49;
+    color: #fef8eb;
+    border: none;
+}
 
-.button{
-	margin-top: 5%;
-	height: 40px;
-	background-color: #c19a49;
-	color: #fef8eb;
+.user-form__checkbox {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    color: #d3bb89;
+    font-family: 'EB Garamond', serif;
 }
 
 @font-face {
-	font-family: "Game of Thrones";
-	src: url("fonts/Game of Thrones.ttf");
-
+    font-family: "Game of Thrones";
+    src: url("fonts/Game of Thrones.ttf");
 }

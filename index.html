@@ -9,28 +9,26 @@
 </head>
 <body>
 	<section class="panel-left">
-		
 	</section>
 	<section class="panel-right">
 		<form class="user-form"
 			  action="#"
 			  method="post"
 			  accept-charset="utf-8">
-			<div class="user-form__header">Game of Trones
+<!--			<div class="user-form__header">Game of Trones
 			</div>
-			<div class="user-form_report">
+			<div class="user-form__report">
 				<p> You've successfully joined the game. </p>
           		<p> Tell us more about yourself. </p>
 			</div>
-			<div class="user-fo rm__input">
-				<label class="input_label" for="username">Who are you?</label>
+			<div class="user-form__input">
+				<label class="input-label" for="username">Who are you?</label>
 				<p>Alpha-numeric username</p>
 				<input type="text" name="" id="username" value="" placeholder="arya">
-				<hr>
 			</div>
 			<div class="user-form__input">
-				<label class="input_label" for="select_house">You Great House</label>
-				<select name="input_select" id="select_house" >
+				<label class="input-label" for="select_house">You Great House</label>
+				<select name="input-select" id="select_house" >
 					<option hidden selected disabled=""> Select House</option>
 					<option value="Stark">Stark of Winterfell</option>
 					<option value="Lannister">Lannister of Casterly Rock</option>
@@ -41,18 +39,29 @@
 					<option value="Tully">Tully of Riverrun</option>
 					<option value="Tyrell">Tyrell of Highgarden</option>
 				</select>
-				<hr>
 			</div>
 			<div class="user-form__input">
-				<label class="input_label" for="textarea">You preferences, hobbies, wishes, etc.</label>
+				<label class="input-label" for="textarea">You preferences, hobbies, wishes, etc.</label>
 				<textarea class="input_textarea" name="" id="textarea" placeholder="I have a long TOKILL list..."></textarea>
-				 <hr>				
 			</div>
+			<input class="button" type="button" name="Save" value="Save" placeholder="Save">-->
 
-			<input class="button" type="button" name="Save" value="Save" placeholder="Save">
+			<div class="user-form__header">Game of Trones
+			</div>
+			<div class="user-form__input">
+				<label class="input-label" >Enter you email!</label>
+				<input type="email" name="" id="email" value="" placeholder="arya@westeron.com">
+			</div>
+			<div class="user-form__input">
+				<label class="input-label" >Choose secure password!</label>
+				<p>Must be a least 8 characters</p>
+				<input type="password" name="" id="password" value="" placeholder="password">
+			</div>
+			<div class="user-form__checkbox">
+				<label> <input type="checkbox" id="checkbox_remember"> <span>Remember me</span></label>
+			</div>
+			<input class="button" type="button" name="Sign Up" value="Sign Up" placeholder="Sign Up">
 		</form>
-		
 	</section>
-	
 </body>
 </html>

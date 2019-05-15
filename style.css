@@ -6,33 +6,29 @@ html {
 }
 
 * {
-    margin: 0 0 0 0;
+    margin: 0;
 
-}
-
-body {
-    display: flex;
 }
 
 .panel-left {
-    margin: -8px 0px -8px -8px;
     width: 50%;
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-image: url(image/maxresdefault.jpg);
+    position: fixed;
 }
 
-.panel-right {
-    display: grid;
-    margin: -10px 0px -10px 0px;
-    align-items: center;
+.panel_right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 50%;
-    height: 100vh;
-
+    height: auto;
+    margin-left: 50%;
 }
 
-.user-form__header {
+.user_form__header {
     text-align: center;
     font-family: "Game of Thrones", serif;
     font-size: 1.5em;
@@ -40,55 +36,53 @@ body {
     padding-bottom: 10%;
 }
 
-.user-form {
-    justify-content: space-between;
+.user_form {
     display: flex;
-    height: auto;
-    padding: 0% 15% 0% 15%;
+    justify-content: space-between;
+    padding: 0 15%;
     flex-direction: column;
-
+    margin-top: 10%;
 }
 
-.user-form__report {
-    display: grid;
+.user_form__report {
     font-family: sans-serif;
     font-size: 0.8em;
     color: white;
     border-left: 2px solid;
-    border-bottom: 1px solid;
     border-color: #d3bb89;
     padding-left: 10px;
-    margin-bottom: 10%;
-    padding-bottom: 5%;
 }
 
-.user-form__input {
+.user_form__input {
     font-family: 'EB Garamond', serif;
     display: grid;
     padding-bottom: 5%;
     padding-top: 5%;
     border-bottom: 2px solid;
     border-color: #d3bb89;
-
-
 }
 
-.user-form__input p {
-    font-size: 0.6em;
+.user_form__input .input_paragraph {
+    font-family: 'EB Garamond', serif ;
+    font-size: 1rem;
     color: white;
     margin: 0;
-
 }
 
-.user-form__input input {
+.user_form__input .input {
     background-color: inherit;
     border: none;
     padding-top: 5%;
     outline: none;
     color: #fef8eb;
 }
+.user_form__input_select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
-.input-label {
+.input_label {
     font-family: 'EB Garamond', serif;
     font-size: 1em;
     color: #d3bb89;
@@ -123,13 +117,20 @@ body {
     border: none;
 }
 
-.user-form__checkbox {
+.user_form__checkbox {
     display: flex;
     flex-direction: row;
     padding-bottom: 5%;
     padding-top: 5%;
     color: #d3bb89;
     font-family: 'EB Garamond', serif;
+}
+
+.user_form__checkbox_button {
+    overflow: hidden;
+    background-color: #d3bb89;
+    color: #d3bb89;
+
 }
 
 @font-face {

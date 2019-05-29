@@ -119,8 +119,6 @@ html {
 }
 
 .user_form__checkbox {
-    display: flex;
-    flex-direction: row;
     padding-bottom: 5%;
     padding-top: 5%;
     color: #d3bb89;
@@ -128,10 +126,10 @@ html {
 }
 
 .user_form__checkbox_button {
-    overflow: hidden;
+    margin-right: 5px;
     background-color: #d3bb89;
     color: #d3bb89;
-
+    border: 0.1rem solid #d3bb89;
 }
 
 @font-face {

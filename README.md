@@ -7,7 +7,6 @@
 - white - `#fef8eb`
 - black - `#202020`
 
-
 ### Fonts: 
 
 - serif - `EB Garamond`

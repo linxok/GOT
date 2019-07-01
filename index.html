@@ -13,19 +13,41 @@
         <div class="section section__form">
             <h1 class="header_got">game of thrones</h1>
             <div class="wrapper">
-                <div class="form" id="form_first">
-                    <label class="form__label" for="email">Enter your email</label>
-                    <input class="form__input" id="email" minlength="3" placeholder="arya@westeros.com" required
-                           type="email">
-                    <label class="form__label" for="password">Choose secure password</label>
-                    <span class="form__must">Must be at least 8 characters</span>
-                    <input class="form__input" id="password" maxlength="30" minlength="8" placeholder="password"
-                           required type="password">
-                    <label class="container form__label">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>Remember me
-                    </label>
-                    <button class="form__button" id="signup" type="button">Sign Up</button>
+                <!--                <div class="form" id="form_first">-->
+                <!--                    <label class="form__label" for="email">Enter your email</label>-->
+                <!--                    <input class="form__input" id="email" minlength="3" placeholder="arya@westeros.com" required-->
+                <!--                           type="email">-->
+                <!--                    <label class="form__label" for="password">Choose secure password</label>-->
+                <!--                    <span class="form__must">Must be at least 8 characters</span>-->
+                <!--                    <input class="form__input" id="password" maxlength="30" minlength="8" placeholder="password"-->
+                <!--                           required type="password">-->
+                <!--                    <label class="container form__label">-->
+                <!--                        <input type="checkbox">-->
+                <!--                        <span class="checkmark"></span>Remember me-->
+                <!--                    </label>-->
+                <!--                    <button class="form__button" id="signup" type="button">Sign Up</button>-->
+                <!--                </div>-->
+                <div class="form" id="form_second">
+                    <p class="form__intro">You`ve succsessfully joined the game.</p>
+                    <p class="form__intro">Tell us more about yourself.</p>
+                    <label class="form__label" for="username">Who are you</label>
+                    <span class="form__must">Alpha-numeric username</span>
+                    <input class="form__input" id="username" minlength="3" placeholder="arya" type="text">
+                    <label class="form__label" for="selectHouse">Your Grat House</label>
+                    <div class="form__input form__option" id="optionSelectHouse">
+                        <select id="selectHouse">
+                            <option disabled hidden selected value="">Select House</option>
+                            <option class="option" value="0">House Arryn</option>
+                            <option class="option" value="1">House Greyjoy</option>
+                            <option class="option" value="2">House Lannister</option>
+                            <option class="option" value="3">House Stark</option>
+                            <option class="option" value="4">House Targaryen</option>
+                        </select>
+                    </div>
+                    <label class="form__label" for="textarea">Your preferebces, hobbies, wishes, etc.</label>
+                    <textarea class="form__input form__textarea" id="textarea"
+                              placeholder="I have a long TOKILL list..."></textarea>
+                    <button class="form__button" id="buttonSave" type="button">Save</button>
                 </div>
             </div>
 

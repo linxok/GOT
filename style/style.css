@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: "GoT";
-    src: url("fonts/Game of Thrones.ttf");
+    src: url("../fonts/Game of Thrones.ttf");
 }
 
 .wrapper {
@@ -21,7 +21,7 @@
 }
 
 .section__image {
-    background: url("image/maxresdefault.jpg") center center;
+    background: url("../image/maxresdefault.jpg") center center;
     width: 50%;
     background-size: cover;
 }
@@ -29,7 +29,7 @@
 .section__form {
     display: flex;
     flex-direction: column;
-    background: url("image/darknoise.png");
+    background: url("../image/darknoise.png");
     width: 50%;
 }
 
@@ -199,4 +199,12 @@
 
 .form__textarea {
     resize: none;
+}
+
+#form_first {
+    display: flex;
+}
+
+#form_second {
+    display: none;
 }

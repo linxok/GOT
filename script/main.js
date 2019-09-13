@@ -15,6 +15,5 @@ document.getElementById('buttonSave').addEventListener('click', (event) => {
         document.getElementById('form_second').style.display = 'flex';
         console.log("next form");
         event.preventDefault();
-
     }
 });

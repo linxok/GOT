@@ -3,8 +3,8 @@ document.getElementById('sign_up').addEventListener('click', (event) => {
     if (form_first.checkValidity()) {
         document.getElementById('form_first').style.display = 'none';
         document.getElementById('form_second').style.display = 'flex';
-        console.log("next form");
-        event.preventDefault(); // https://learn.javascript.ru/default-browser-action
+
+      event.preventDefault(); // https://learn.javascript.ru/default-browser-action
     }
 });
 
@@ -13,7 +13,7 @@ document.getElementById('buttonSave').addEventListener('click', (event) => {
     if (form_second.checkValidity()) {
         document.getElementById('form_first').style.display = 'none';
         document.getElementById('form_second').style.display = 'flex';
-        console.log("next form");
-        event.preventDefault();
+
+      event.preventDefault();
     }
 });

@@ -37,10 +37,9 @@ const GOThous = [
   }
 ];
 
-
 document.getElementById('sign_up').addEventListener('click', (event) => {
   let form_first = document.getElementById('form_first');
-  if (form_first.checkValidity()) {
+  if (form_first.checkValidity() || checkPassword(password)) {
     document.getElementById('form_first').style.display = 'none';
     document.getElementById('form_second').style.display = 'flex';
     event.preventDefault(); // https://learn.javascript.ru/default-browser-action
@@ -59,9 +58,42 @@ document.getElementById('buttonSave').addEventListener('click', (event) => {
   }
 });
 
+const password = document.getElementById('password');
+password.addEventListener('keyup', (event) => {
+  checkPassword(password.value);
+});
+
+function checkPassword(password) {
+  let result = true;
+
+  const alertText = document.getElementById('alertTxt');
+  alertText.innerHTML = '';
+
+  if (!/([a-z]+)/.test(password)) {
+    alertText.innerHTML = alertText.innerHTML + ' little character ';
+    result = false;
+  }
+  if (!/[A-Z]+/.test(password)) {
+    alertText.innerHTML = alertText.innerHTML + ' big character ';
+    result = false;
+  }
+  if (!/[0-9]+/.test(password)) {
+    alertText.innerHTML = alertText.innerHTML + ' number ';
+    result = false;
+  }
+  if (!/[!@#\$%\^&\*]+/.test(password)) {
+    alertText.innerHTML = alertText.innerHTML + ' specific symbol: !@#$%^&* ';
+    result = false;
+  }
+
+  return result;
+}
+
+
 function createOption(houses) {
   let option = $('#selectHouse');
   for (let element of houses) {
     option.append(`<option class="option" value='${element.house}'>${element.house}</option>`);
   }
 }
+

@@ -67,23 +67,27 @@ function checkPassword(password) {
   let result = true;
 
   const alertText = document.getElementById('alertTxt');
-  alertText.innerHTML = '';
+  alertText.innerHTML = 'Password must contain one is ';
 
   if (!/([a-z]+)/.test(password)) {
-    alertText.innerHTML = alertText.innerHTML + ' little character ';
+    alertText.innerHTML = alertText.innerHTML + ' little character, ';
     result = false;
   }
   if (!/[A-Z]+/.test(password)) {
-    alertText.innerHTML = alertText.innerHTML + ' big character ';
+    alertText.innerHTML = alertText.innerHTML + ' big character, ';
     result = false;
   }
   if (!/[0-9]+/.test(password)) {
-    alertText.innerHTML = alertText.innerHTML + ' number ';
+    alertText.innerHTML = alertText.innerHTML + ' number, ';
     result = false;
   }
   if (!/[!@#\$%\^&\*]+/.test(password)) {
-    alertText.innerHTML = alertText.innerHTML + ' specific symbol: !@#$%^&* ';
+    alertText.innerHTML = alertText.innerHTML + ' specific symbol: !@#$%^&*, ';
     result = false;
+  }
+
+  if (result) {
+    alertText.innerHTML = 'Must be at least 8 < X < 18 characters';
   }
 
   return result;

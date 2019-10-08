@@ -36,7 +36,15 @@ const GOThous = [
     img: './image/houses/House-Tyrell-Main-Shield.PNG.png'
   }
 ];
-
+$(document).ready(function () {
+  createSlide(GOThous);
+  $('.owl-carousel').owlCarousel({
+    startPosition: 0,
+    loop: false,
+    items: 1,
+    center: true
+  });
+});
 document.getElementById('sign_up').addEventListener('click', (event) => {
   let form_first = document.getElementById('form_first');
   if (form_first.checkValidity() || checkPassword(password)) {
@@ -93,6 +101,12 @@ function checkPassword(password) {
   return result;
 }
 
+function createSlide(house) {
+  const slider = $('.owl-carousel');
+  for (let element of house) {
+    slider.append(`<div><img src="${element.img}" alt="${element.house}"></div>`);
+  }
+}
 
 function createOption(houses) {
   let option = $('#selectHouse');

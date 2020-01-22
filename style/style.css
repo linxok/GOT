@@ -176,18 +176,15 @@
 .form__option {
   position: relative;
   display: block;
-  width: 20em;
   line-height: 2px;
-  background: transparent;
   overflow: hidden;
   width: 100%;
-
 }
 
-.form__option select {
+#selectHouse {
   box-shadow: none;
   border: 0 !important;
-  background: transparent none;
+  background-color: transparent;
   font-size: 18px;
   padding: 6px 0;
   width: 100%;
@@ -195,12 +192,11 @@
   margin: 0;
   color: #c19a49;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.form__option select .option {
-  background: transparent;
-  padding: 0;
-}
 
 .form__textarea {
   resize: none;
@@ -217,9 +213,7 @@
 .owl-carousel img {
   max-width: 60%;
   margin: 10% 0 0 20%;
-
 }
-
 .owl-dots {
   display: none;
 }

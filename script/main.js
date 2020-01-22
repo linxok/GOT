@@ -55,8 +55,9 @@ $(document).ready(function () {
 
 
   document.getElementById('sign_up').addEventListener('click', (event) => {
+
     let form_first = document.getElementById('form_first');
-    if (form_first.checkValidity() || checkPassword(password)) {
+    if (form_first.checkValidity() && checkPassword(password.value)) {
       document.getElementById('form_first').style.display = 'none';
       document.getElementById('form_second').style.display = 'flex';
       event.preventDefault(); // https://learn.javascript.ru/default-browser-action
@@ -103,9 +104,6 @@ $(document).ready(function () {
       result = false;
     }
 
-    if (result) {
-      alertText.innerHTML = 'Must be at least 8 < X < 18 characters';
-    }
 
     return result;
   }
@@ -124,9 +122,6 @@ $(document).ready(function () {
       option.append(`<option class="option" value='${i++}'>${element.house}</option>`);
     }
   }
-
-
-
 
 });
 
